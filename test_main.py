@@ -95,7 +95,7 @@ def test_invalid_empty_search():
         }
 
 # Tests search endpoint with mutliple parameters 
-def test_invalid_empty_search():
+def test_invalid_multiple_params():
     response = client.get('/search/1/2')
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.json() == {
